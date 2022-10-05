@@ -2,6 +2,12 @@
 
 This tool is used to speculate form schema from form data. Take note that you still need to READ and EDIT the json schema result for better accuracy.
 
+## How to use
+- Clone this repo
+- Edit file `data.json` with mock data you get from CMS
+- Type command `node index` at terminal
+- Edit `schema.json` for the correct structure
+
 ## Example
 
 This is the json data in `data.json` file using as input **data.json**
