@@ -1,3 +1,5 @@
+# Form data to Form schema
+
 This tool is used to speculate form schema from form data. Take note that you still need to READ and EDIT the json schema result for better accuracy.
 
 ## Example
