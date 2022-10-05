@@ -8,7 +8,11 @@ function uuid() {
 }
 
 function isBlock(value) {
-  return Array.isArray(value);
+  return Array.isArray(value) && value.length > 0 && !value[0].children;
+}
+
+function isRichText(value) {
+  return Array.isArray(value) && value.length > 0 && value[0].children;
 }
 
 function isToggle(key, value) {
@@ -28,7 +32,7 @@ function isTextarea(value) {
 }
 
 function isAutocomplete(value) {
-  return typeof Object.keys(value).length > 1;
+  return Object.keys(value).length > 1;
 }
 
 function parseJSON(jsonStr) {
@@ -58,6 +62,11 @@ function generateField({ type, key, required }) {
   return result;
 }
 
+function addToSchema({ schema, type, key, required }) {
+  const field = generateField({ type, key, required });
+  schema.push(field);
+}
+
 function main() {
   const json = readFileSync("data.json", { encoding: "utf-8" });
   const data = parseJSON(json);
@@ -73,19 +82,35 @@ function main() {
   for (const key in data) {
     let required = true;
     const value = data[key];
-    if (isBlock(value)) curType = "block";
-    if (isToggle(key, value)) curType = "toggle";
-    if (isCheckbox(value)) curType = "checkbox";
-    if (isTextField(value)) {
-      curType = "text_field";
-      if (!value) required = false;
-      console.log(value, required);
+    if (isBlock(value)) {
+      addToSchema({ schema: result.properties, type: 'block', key, required });
+      continue;
     }
-    if (isTextarea(value)) curType = "textarea";
-    if (isAutocomplete(value)) curType = "autocomplete";
-
-    const field = generateField({ type: curType, key, required });
-    result.properties.push(field);
+    if (isRichText(value)) {
+      addToSchema({ schema: result.properties, type: 'rich_text', key, required });
+      continue;
+    }
+    if (isToggle(key, value)) {
+      addToSchema({ schema: result.properties, type: 'toggle', key, required });
+      continue;
+    }
+    if (isCheckbox(value)) {
+      addToSchema({ schema: result.properties, type: 'checkbox', key, required });
+      continue;
+    }
+    if (isTextField(value)) {
+      if (!value) required = false;
+      addToSchema({ schema: result.properties, type: 'text_field', key, required });
+      continue;
+    }
+    if (isTextarea(value)) {
+      addToSchema({ schema: result.properties, type: 'textarea', key, required });
+      continue;
+    }
+    if (isAutocomplete(value)) {
+      addToSchema({ schema: result.properties, type: 'autocomplete', key, required });
+      continue;
+    }
   }
 
   writeFileSync("schema.json", JSON.stringify(result));

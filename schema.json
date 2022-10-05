@@ -2,132 +2,132 @@
   "formInfo": { "size": "", "endpoint": "" },
   "properties": [
     {
-      "id": "l8v2zv61bzqh25juhk",
+      "id": "l8v9nxxrvvhoq27h2os",
       "name": "banner_heading",
       "title": "Banner Heading",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv627bi7a05feyc",
+      "id": "l8v9nxxsqkkdhdblt38",
       "name": "banner_heading_live_tag",
       "title": "Banner Heading Live Tag",
       "type": "text_field"
     },
     {
-      "id": "l8v2zv62qke7k8yv1o",
+      "id": "l8v9nxxsfdmaa3kbva4",
       "name": "banner_tag_line",
       "title": "Banner Tag Line",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv62px9a09ky2tm",
+      "id": "l8v9nxxs88kw3qcpq5d",
       "name": "banner_description",
       "title": "Banner Description",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv62zs7gekneqkj",
+      "id": "l8v9nxxsbuxaun8smhu",
       "name": "background_image",
       "title": "Background Image",
       "type": "text_field"
     },
     {
-      "id": "l8v2zv622lxqz6gmbru",
+      "id": "l8v9nxxsb1yvjpn0kt5",
       "name": "video_url",
       "title": "Video Url",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv62eb6jrh5m326",
+      "id": "l8v9nxxsy16zhdpe08m",
       "name": "watch_video_button_text",
       "title": "Watch Video Button Text",
       "type": "text_field"
     },
     {
-      "id": "l8v2zv62a3b3w9pb8tu",
+      "id": "l8v9nxxstntjclcs33n",
       "name": "form_button_text_cms",
       "title": "Form Button Text Cms",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv62enue811rbin",
+      "id": "l8v9nxxsqkwfgadywjs",
       "name": "schedule_button_text",
       "title": "Schedule Button Text",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv62o3p58rdlxdc",
+      "id": "l8v9nxxs8a9ynz5555y",
       "name": "refer_and_earn",
       "title": "Refer And Earn",
       "type": "text_field"
     },
     {
-      "id": "l8v2zv6284k31axw7th",
+      "id": "l8v9nxxsgi8jei4lcbn",
       "name": "job_portal",
       "title": "Job Portal",
       "type": "text_field"
     },
     {
-      "id": "l8v2zv62lbj3bp5d21i",
+      "id": "l8v9nxxsct0dos2g85m",
       "name": "job_portal_url",
       "title": "Job Portal Url",
       "type": "text_field"
     },
     {
-      "id": "l8v2zv62mplpxclk8vb",
+      "id": "l8v9nxxswq84efwcq6",
       "name": "phone",
       "title": "Phone",
       "type": "text_field"
     },
     {
-      "id": "l8v2zv63qf1f2ldirh",
+      "id": "l8v9nxxs6y2l1etl00x",
       "name": "banner_background_color_code",
       "title": "Banner Background Color Code",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv63yt2y1u8pn6i",
+      "id": "l8v9nxxsdfper1x3cl",
       "name": "location",
       "title": "Location",
       "type": "text_field"
     },
     {
-      "id": "l8v2zv63i2l9y3tkfhi",
+      "id": "l8v9nxxs4rzmv42v0yd",
       "name": "id",
       "title": "Id",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv63q34mpn74xq",
+      "id": "l8v9nxxsqy4om94ftwd",
       "name": "code",
       "title": "Code",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv63q49xj0xwgms",
+      "id": "l8v9nxxs6qcldz9z9j",
       "name": "section",
       "title": "Section",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv636lmjdq6zkd4",
+      "id": "l8v9nxxso42gbqgy9la",
       "name": "courseSlug",
       "title": "Course Slug",
       "type": "text_field",
       "required": true
     },
     {
-      "id": "l8v2zv632bd5yoxkqyu",
+      "id": "l8v9nxxsg1hfbfk4n7g",
       "name": "banner_counting",
       "title": "Banner Counting",
       "type": "block",
@@ -136,17 +136,17 @@
       "required": true
     },
     {
-      "id": "l8v2zv634v00fanrxh",
+      "id": "l8v9nxxsfzd4rbjzlol",
       "name": "status",
       "title": "Status",
-      "type": "checkbox",
+      "type": "toggle",
       "required": true
     },
     {
-      "id": "l8v2zv6366y6bcwcmwu",
+      "id": "l8v9nxxs9kdv94rjfli",
       "name": "form_button_target",
       "title": "Form Button Target",
-      "type": "checkbox",
+      "type": "autocomplete",
       "required": true
     }
   ]
