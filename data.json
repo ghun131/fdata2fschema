@@ -1,0 +1,49 @@
+{
+  "banner_heading": "heading",
+  "banner_heading_live_tag": "",
+  "banner_tag_line": "tagline",
+  "banner_description": "desc",
+  "background_image": "",
+  "video_url": "test",
+  "watch_video_button_text": "",
+  "form_button_text_cms": "btn txt something",
+  "schedule_button_text": "schedule txt",
+  "refer_and_earn": "",
+  "job_portal": "",
+  "job_portal_url": "",
+  "phone": "",
+  "banner_background_color_code": "#ffffff",
+  "location": "",
+  "id": "6333c83e4d60646f1120e610",
+  "code": "banner-1",
+  "section": "banner",
+  "courseSlug": "cspo-certification-training",
+  "banner_counting": [
+    {
+      "name": "first name",
+      "count": "1",
+      "countText": "name text"
+    },
+    {
+      "name": "second name",
+      "count": "2",
+      "countText": "second text"
+    },
+    {
+      "name": "third",
+      "count": "3",
+      "countText": "count text 3"
+    },
+    {
+      "name": "fourth",
+      "count": "4",
+      "countText": "count text 4"
+    }
+  ],
+  "status": true,
+  "form_button_target": {
+    "id": 143242,
+    "label": "alpha form target",
+    "value": "alpha"
+  }
+}

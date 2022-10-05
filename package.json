@@ -1,0 +1,18 @@
+{
+  "name": "fdata-2-fschema",
+  "version": "1.0.0",
+  "description": "This tool is used to convert data back to schema:wq",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "change-case": "^4.1.2",
+    "lodash.startcase": "^4.4.0",
+    "lodash.tolower": "^4.1.2"
+  }
+}
